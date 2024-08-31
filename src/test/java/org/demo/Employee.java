@@ -34,10 +34,10 @@ public class Employee {
 				CellType type = cell.getCellType();
 //		System.out.println(type);
 			switch (type) {
-//			case STRING:
-//				String value = cell.getStringCellValue();
-//				System.out.println(value);
-//				break;
+			case STRING:
+				String value = cell.getStringCellValue();
+				System.out.println(value);
+				break;
 		case NUMERIC:
 				if(DateUtil.isCellDateFormatted(cell)) {
 					Date dateCellValue = cell.getDateCellValue();
