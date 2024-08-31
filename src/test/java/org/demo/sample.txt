@@ -1,0 +1,12 @@
+Write 10 Methods in String
+----------------------------------
+1.length();
+2.length();
+3.endsWith()
+4.replace()
+5.replaceAll()
+6.trim()
+7.charAt()
+8.indexOf()
+9.lastIndexOf()
+10.toLowerCase
