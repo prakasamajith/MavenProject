@@ -7,5 +7,4 @@ public class EmployeeNotFoundException extends Exception {
 		return "Not Found";
 	}
 	
-	
 }
