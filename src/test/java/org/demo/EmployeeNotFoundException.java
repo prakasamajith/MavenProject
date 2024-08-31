@@ -2,9 +2,10 @@ package org.demo;
 
 public class EmployeeNotFoundException extends Exception {
 
-	@Override
-	public String getMessage() {
-		return "Not Found";
+	
+	public static void m1() {
+
+		System.out.println("2");
 	}
 	
 }

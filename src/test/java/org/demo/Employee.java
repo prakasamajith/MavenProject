@@ -32,16 +32,16 @@ public class Employee {
 				Cell cell = row.getCell(j);
 				
 				CellType type = cell.getCellType();
-//				System.out.println(type);
+//		System.out.println(type);
 			switch (type) {
-			case STRING:
-				String value = cell.getStringCellValue();
-				System.out.println(value);
-				break;
-			case NUMERIC:
+//			case STRING:
+//				String value = cell.getStringCellValue();
+//				System.out.println(value);
+//				break;
+		case NUMERIC:
 				if(DateUtil.isCellDateFormatted(cell)) {
 					Date dateCellValue = cell.getDateCellValue();
-					SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MMMM-YYYY");
+					SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MMM-YYYY");
 					String format = dateFormat.format(dateCellValue);
 					System.out.println(format);
 				}
