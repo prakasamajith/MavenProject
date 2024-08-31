@@ -38,6 +38,7 @@ public class Employee {
 				String value = cell.getStringCellValue();
 				System.out.println(value);
 				break;
+				
 		case NUMERIC:
 				if(DateUtil.isCellDateFormatted(cell)) {
 					Date dateCellValue = cell.getDateCellValue();
