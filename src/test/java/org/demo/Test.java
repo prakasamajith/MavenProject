@@ -1,16 +1,19 @@
 package org.demo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
-
-//	static int id = 100;
-
-//	private void m1() {
-//		System.out.println(id);
-//	}
 	
 	public static void main(String[] args) {
-	
-		System.out.println("10000000000000000000000");
+		List<String> s=new ArrayList<String>();
+		s.add("Aji");
+		s.add("Attur");
+		s.add("India");
+		for(int i=0;i<s.size();i++) {
+			String string = s.get(i);
+			System.out.println(string);
+		}
+	}
 }
 	
-}

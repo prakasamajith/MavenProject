@@ -1,8 +1,11 @@
 package org.demo;
 
-public class SingletonSample {
+public class SingletonSample{
 
+	
 	public static void main(String[] args) {
+		
+		
 		Singleton e1 = Singleton.getObjectInstance();
 		e1.getEmpAddress();
 		e1.getId();

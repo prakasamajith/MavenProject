@@ -42,17 +42,22 @@ public class Employee {
 		case NUMERIC:
 				if(DateUtil.isCellDateFormatted(cell)) {
 					Date dateCellValue = cell.getDateCellValue();
-					SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MMM-YYYY");
+					SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MMMM-YY");
 					String format = dateFormat.format(dateCellValue);
 					System.out.println(format);
 				}
 				else
 				{
 					double numericCellValue = cell.getNumericCellValue();
-					BigDecimal b = BigDecimal.valueOf(numericCellValue);
-					String num = b.toString();
-					System.out.println(num);
-					break;
+					long round = Math.round(numericCellValue);
+					if(numericCellValue==round) {
+						String valueOf = String.valueOf(round);
+						System.out.println(valueOf);
+					}
+					else {
+						String valueOf = String.valueOf(numericCellValue);
+						System.out.println(valueOf);
+					}
 				}
 				
 				default:
