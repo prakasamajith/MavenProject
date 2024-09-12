@@ -9,6 +9,6 @@ public class Animal extends Tes {
 		Animal a = new Animal();
 		a.sound();
 		Tes t = new Tes();
-		t.sound();
+	
 	}
 }
