@@ -1,14 +1,16 @@
 package org.demo;
 
-public class Animal extends Tes {
+public class Animal {
 
-	public void sound() {
-		System.out.println("This is Animal");
-}
+	public void m1() {
+		int a = 100;
+		System.out.println(a);
+	}
+
 	public static void main(String[] args) {
-		Animal a = new Animal();
-		a.sound();
-		Tes t = new Tes();
-	
+
+		Animal p = new Animal();
+		p.m1();
+
 	}
 }
